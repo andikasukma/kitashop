@@ -1,0 +1,364 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+ul, li, a{
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+
+}
+.content{
+    width: 1200px;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
+/*--header--*/
+.header{
+    height: 90px;
+    width: 1200px;
+    text-align: center;
+    margin: auto;
+    z-index: 1;
+    transition: .5s;
+}
+.logo{
+    float: left;
+    width: 20%;
+    margin-top: 10px;
+    display: inline;
+}
+.logo h2{
+    font-size: 36px;
+    font-family: 'Bonheur Royale', cursive;
+    color:rgb(36, 31, 78);
+}
+.logo span{
+    font-size: 52px;
+    color: red;
+}
+.link{
+    text-align: center;
+    align-items: center;
+    display: inline-flex;
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.link a{
+    font-size: 14px;
+    color: #000;
+    margin: 45px 15px;
+    font-weight: bold;
+    font-family: 'Asap', sans-serif;
+}
+.link a::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #009688;
+    display: block;
+    margin: auto;
+    transition: .5s;
+}
+.link a:hover{
+    color: #009688;
+}
+.link a:hover::after{
+    width: 100%;
+}
+.important-btn{
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.important-btn .btn{
+    height: 40px;
+    width: 40px;
+    float: right;
+    background-color: #c2cad0;
+    border-radius:50%;
+    padding: auto;
+    text-align: center;
+    margin-right: 10px;
+    cursor: pointer;
+    float: left;
+    position: relative;
+}
+.important-btn .btn .fa{
+    font-size: 18px;
+    padding: 10px;
+}
+.btn:hover{
+    background-color: #009688;
+}
+.btn a{
+    color: #000;
+}
+
+.btn:hover a{
+    color: #fff;
+}
+.btn:hover .fa{
+    color: #fff;
+}
+.btn:hover .btn-val{
+    background-color: #fff;
+}
+.btn:hover .btn-val p{
+    color: #009688;
+}
+.btn-val{
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    height: 15px;
+    width: 15px;
+    border-radius: 10px;
+    background-color: #009688;
+    text-align: center;
+}
+.btn-val p{
+    font-size: 12px;
+    margin: .5px;
+    color: #fff;
+}
+.description{
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-flex;
+    border-bottom: 1px solid #009688;
+}
+.description p{
+    font-size: 16px;
+    letter-spacing: 5px;
+    margin-right: 10px;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: bold;
+}
+.description .fa{
+    float: auto;
+    margin: 3px  7px;
+    cursor: pointer;
+}
+.description .fa:hover{
+    color: #009688;
+}
+
+/*--SEARCH--*/
+.content .search{
+    top: 0;
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    margin: 0;
+    z-index: 10;
+    background-color: #fff;
+    transition: .5s;
+    display: none;
+    text-align: center;
+    padding: 0;
+}
+.search h1{
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    font-size: 30px;
+}
+.search-box{
+    height: 10px;
+}
+.search input{
+    position: absolute;
+    left: 250px;
+    top: 20px;
+    width: 600px;
+    height: 30px;
+    outline: none;
+    font-size: 16px;
+    padding-left: 5px;
+    border: 1px solid #c2cad0;
+}
+.search button{
+    position: absolute;
+    top: 20px;
+    left: 860px;
+    height: 30px;
+    width: 30px;
+    background-color: #009688;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    border: 1px solid #000;
+}
+.close{
+    text-align: right;
+    float: right;
+    position: absolute;
+    top: 20px;
+    left: 1100px;
+    
+}
+.close .fa{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+.banner{
+    width: 100%;
+    text-align: center;
+    height: 200px;
+    background-color: #c2cad0;
+    position: relative;
+}
+.banner-text{
+    margin: auto;
+    position: absolute;
+    width: 1200px;
+    top: 35%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+}
+.banner-text h2{
+    font-size: 26px;
+    color: #000;
+    font-family: 'Ephesis', cursive;
+}
+.banner-text p{
+    font-size: 14px;
+    margin-top: 10px;
+}
+.banner-text span{
+    color: #009688;
+}
+.form-login{
+    height: 500px;
+    padding-top: 80px;
+    display: relative;
+}
+.form-login a{
+    font-size: 16px;
+    color: rgb(93, 93, 250);
+    cursor: pointer;
+}
+.form-login a:hover{
+    text-decoration: underline;
+}
+.form-login h1{
+    font-size: 36px;
+}
+.form-login p{
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+.form-login span{
+    right: 0;
+    color: rgb(93, 93, 250);
+    cursor: pointer;
+}
+.form-login span:hover{
+    text-decoration: underline;
+}
+.login-left{
+    width: 50%;
+    float: left;
+}
+.username, .password, .login-btn{
+    text-align: right;
+    margin-bottom: 30px;
+}
+.login-left p{
+    font-size: 12px;
+    right: 0;
+    color: rgb(93, 93, 250);
+    cursor: pointer;
+}
+.password{
+    position: relative;
+}
+.login-left p:hover{
+    text-decoration: underline;
+}
+.username input, .password input{
+    outline: none;
+    height: 40px;
+    width: 80%;
+    font-size: 16px;
+    font-weight: 200;
+    color: #5f6061;
+    border-top: none; border-right: none; border-left: none;
+    border-bottom: 1px solid #c2cad0;
+}
+.password .fa{
+    position: absolute;
+    left: 95%;
+    bottom: 25px ;
+    cursor: pointer;
+}
+.login-btn button{
+    height: 40px;
+    width: 80%;
+    font-size: 20px;
+    font-weight: 200;
+    color: #000;
+    background-color: #c2cad0;
+    border: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.login-btn button:hover{
+    background-color: #009688;
+    color: #fff;
+}
+.login-btn p{
+    margin-left: 40%;
+    transform: translateX(-50%);
+}
+.login-right{
+    float: right;
+    text-align: center;
+    width: 50%;
+}
+.login-right p{
+    font-size: 22px;
+    color: #020202;
+    margin-bottom: 30px;
+}
+.facebook, .google{
+    height: 30px;
+    background-color: #c2cad0;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.facebook .fa, .google .fa{
+    margin-right: 20px;
+    font-size: 16px;
+}
+.facebook p, .google p{
+    color: #000;
+    font-size: 16px;
+}
+.facebook:hover, .google:hover{
+    background-color: #009688;
+}
+.google:hover p{
+    color: #fff;
+}
+.facebook:hover p{
+    color: #fff;
+}
